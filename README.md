@@ -1,18 +1,8 @@
-# Minimal Starter with Angular on both Server and Browser Platforms
+# A seed project of Angular Universal app
 
-<p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/1016365/10639063/138338bc-7806-11e5-8057-d34c75f3cafc.png" alt="Universal Angular" height="320"/>
-</p>
-
-# Angular Universal Starter [![Universal Angular](https://img.shields.io/badge/universal-angular2-brightgreen.svg?style=flat)](https://github.com/angular/universal)
-> Server-Side Rendering for Angular
-
-A minimal Angular starter for Universal JavaScript using TypeScript and Webpack
+A minimal Angular starter for Universal JavaScript using TypeScript, SASS and Webpack
 
 > If you're looking for the Angular Universal repo go to [**angular/universal**](https://github.com/angular/universal)  
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 
 ## Installation
 
@@ -30,7 +20,7 @@ A minimal Angular starter for Universal JavaScript using TypeScript and Webpack
 * `npm run build:prod` to compile the ngfactory files and build prod
 * `npm run server` to start up the server
 
-## Universal "Gotchas"
+## Notes
 
 > When building Universal components in Angular there are a few things to keep in mind.
 
