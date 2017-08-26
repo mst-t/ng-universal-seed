@@ -4,7 +4,8 @@ import { TransferState } from '../../modules/transfer-state/transfer-state';
 
 @Component({
   selector: 'home-view',
-  template: `<h3>{{ message }}</h3>`
+  template: `<h3>{{ message }}</h3>`,
+  styleUrls: ["./style.scss"]
 })
 export class HomeView implements OnInit {
   public message: string;
