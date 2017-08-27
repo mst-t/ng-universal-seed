@@ -1,5 +1,7 @@
 const { root } = require('./helpers');
 
+const webpack = require('webpack');
+
 /**
  * This is a common webpack config which is the base for all builds
  */
@@ -11,10 +13,11 @@ module.exports = {
   output: {
     path: root('dist')
   },
+  devtool: 'source-map',  
   module: {
     rules: [
       { test: /\.ts$/, loader: '@ngtools/webpack' },
-      { test: /\.css$/, loader: 'raw-loader' },
+      { test: /\.css$/, loader: 'css-loader' },
       { test: /\.html$/, loader: 'raw-loader' },
       {
         test: /\.scss$/,
@@ -23,5 +26,10 @@ module.exports = {
       }
     ]
   },
-  plugins: []
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true
+    })
+  ]
+
 };

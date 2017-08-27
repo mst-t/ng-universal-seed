@@ -1,6 +1,11 @@
 # A seed project of Angular Universal app
 
-A minimal Angular starter for Universal JavaScript using TypeScript, SASS and Webpack. This project is based on [angular/universal-starter](https://github.com/angular/universal-starter).
+A minimal Angular starter for Universal JavaScript using TypeScript and Webpack. This project is based on [angular/universal-starter](https://github.com/angular/universal-starter).
+
+## Changes
+* Sourcemaps are generated.
+* Code is minified.
+* Saas is available.
 
 > If you're looking for the Angular Universal repo go to [**angular/universal**](https://github.com/angular/universal)  
 
