@@ -17,13 +17,14 @@ module.exports = {
   module: {
     rules: [
       { test: /\.ts$/, loader: '@ngtools/webpack' },
-      { test: /\.css$/, loader: 'css-loader' },
       { test: /\.html$/, loader: 'raw-loader' },
+      { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
       {
         test: /\.scss$/,
         exclude: /node_modules/,
         loaders: ['raw-loader', 'sass-loader']
-      }
+      },
+      { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'file-loader' }
     ]
   },
   plugins: [

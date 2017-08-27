@@ -2,8 +2,8 @@ const { root } = require('./helpers');
 
 const { AotPlugin } = require('@ngtools/webpack');
 
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const ScriptExtPlugin = require('script-ext-html-webpack-plugin');
 
 /**
@@ -23,6 +23,12 @@ module.exports = {
     }),
     new ScriptExtPlugin({
       defaultAttribute: 'defer'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
     })
   ]
 };

@@ -4,8 +4,8 @@ A minimal Angular starter for Universal JavaScript using TypeScript and Webpack.
 
 ## Changes
 * Sourcemaps are generated.
-* Code is minified.
-* Saas is available.
+* Js files are minified.
+* Saas and Boostrap are available.
 
 > If you're looking for the Angular Universal repo go to [**angular/universal**](https://github.com/angular/universal)  
 
